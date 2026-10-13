@@ -14,6 +14,7 @@ connectDB();
 // Middlewares
 app.use(cors());
 app.use(express.json());
+app.use("/api/sat/contribuyentes", require("./routes/contribuyenteRoutes"));
 
 // Importar y usar rutas FEL
 const felRoutes = require("./routes/felRoutes");
